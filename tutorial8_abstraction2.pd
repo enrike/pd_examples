@@ -1,0 +1,12 @@
+#N canvas 476 251 450 300 10;
+#X obj 95 50 phasor~;
+#X floatatom 91 9 5 0 0 0 - - -;
+#X obj 103 153 dac~;
+#X floatatom 183 51 5 0 0 0 - - -;
+#X text 229 48 shift click for float;
+#X obj 101 93 abstractionB;
+#X connect 0 0 5 0;
+#X connect 1 0 0 0;
+#X connect 3 0 5 1;
+#X connect 5 0 2 0;
+#X connect 5 0 2 1;

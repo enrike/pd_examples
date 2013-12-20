@@ -1,0 +1,39 @@
+#N canvas 410 99 452 323 10;
+#X floatatom 41 122 5 0 0 0 - - -;
+#X obj 54 50 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 136 49 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 173 51 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 112 122 5 0 0 0 - - -;
+#X floatatom 165 125 5 0 0 0 - - -;
+#X floatatom 255 127 5 0 0 0 - - -;
+#X obj 264 55 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 315 55 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 379 58 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 315 129 5 0 0 0 - - -;
+#X floatatom 382 127 5 0 0 0 - - -;
+#X obj 262 92 abstractionC 371 0.002;
+#X obj 55 87 abstractionC 100 33.3;
+#X text 33 199 each instance of the abstraction has a different internal
+value for \$1 and \$2 which is set with the initialization argument
+;
+#X text 34 267 the 3rd value is UNIQUE for each instance. this is;
+#X text 35 282 produced automatically by PD with the \$0. check inside
+the abstraction;
+#X connect 1 0 13 0;
+#X connect 2 0 13 1;
+#X connect 3 0 13 2;
+#X connect 7 0 12 0;
+#X connect 8 0 12 1;
+#X connect 9 0 12 2;
+#X connect 12 0 6 0;
+#X connect 12 1 10 0;
+#X connect 12 2 11 0;
+#X connect 13 0 0 0;
+#X connect 13 1 4 0;
+#X connect 13 2 5 0;

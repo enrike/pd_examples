@@ -1,0 +1,18 @@
+#N canvas 279 168 489 188 10;
+#X floatatom 57 22 5 0 0 0 - - -;
+#X floatatom 57 69 5 0 0 0 - - -;
+#X floatatom 178 70 5 0 0 0 - - -;
+#X floatatom 291 31 5 0 0 0 - - -;
+#X floatatom 295 74 5 0 0 0 - - -;
+#X floatatom 410 81 5 0 0 0 - - -;
+#X text 42 121 an abstraction is a patch included into another patch
+\, this is TWO different .pd files \, one included into the another.
+;
+#X obj 57 42 abstractiontest 3;
+#X obj 293 49 abstractiontest 2;
+#X connect 0 0 7 0;
+#X connect 3 0 8 0;
+#X connect 7 0 1 0;
+#X connect 7 1 2 0;
+#X connect 8 0 4 0;
+#X connect 8 1 5 0;

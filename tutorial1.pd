@@ -1,0 +1,69 @@
+#N canvas 201 17 815 679 10;
+#X obj 44 361 print;
+#X floatatom 58 59 5 0 0 0 - - -;
+#X symbolatom 71 83 10 0 0 0 - - -;
+#X obj 259 4 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X obj 291 3 tgl 15 0 empty empty empty 0 -6 0 8 -262144 -1 -1 0 1
+;
+#X obj 324 3 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -6 0 10
+-262144 -1 -1 0 256;
+#X obj 321 57 vsl 15 128 0 127 0 0 empty empty empty 0 -8 0 8 -262144
+-1 -1 0 1;
+#X obj 353 58 hsl 128 15 0 127 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 0 1;
+#X obj 368 81 vradio 15 1 0 8 empty empty empty 0 -6 0 8 -262144 -1
+-1 0;
+#X obj 402 82 hradio 15 1 0 8 empty empty empty 0 -6 0 8 -262144 -1
+-1 0;
+#X obj 428 149 vu 15 120 empty empty -1 -8 0 8 -66577 -1 1 0;
+#X floatatom 422 126 5 0 0 0 - - -;
+#X floatatom 471 123 5 0 0 0 - - -;
+#X obj 36 512 route;
+#X obj 111 515 pipe;
+#X obj 178 521 max;
+#X text 81 37 mesage box;
+#X text 103 59 number box;
+#X text 150 84 symbol box;
+#X msg 2 35 moi world!;
+#X text 24 544 right click (command click on mac) them for help and
+description about how to use each of them;
+#X text 32 453 object boxes contain commands \, check /pd/reference/0.INTRO.txt
+for complete description of built-in objects \, such as line \, osc~
+\, + \, max \, etc..;
+#X text 85 359 << this is an object box with a print command on it
+;
+#X text -5 233 this is a comment in the main canvas/patch: > right
+clik on the GUI objects around this area to see their properties!;
+#X text 271 29 some other objects from the PUT menu;
+#X obj 613 158 cnv 15 100 60 empty empty i_am_a_canvas 20 12 0 14 -233017
+-66577 0;
+#N canvas 0 0 450 300 graph1 0;
+#X coords 0 1 100 -1 100 70 1;
+#X restore 613 236 graph;
+#X text 610 310 this is an empty graph;
+#N canvas 0 0 450 300 graph2 0;
+#X array array1 100 float 3;
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0;
+#X coords 0 1 99 -1 200 140 1;
+#X restore 525 369 graph;
+#X text 528 524 this is graph with an array \, check its properties
+;
+#X text 272 618 * CLICK CTRL+E or COMMAND+E on mac TO SWITCH BETWEEN
+EDIT MODE AND PLAY MODE *;
+#X connect 1 0 0 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 0 0;
+#X connect 5 0 0 0;
+#X connect 6 0 0 0;
+#X connect 7 0 0 0;
+#X connect 8 0 0 0;
+#X connect 9 0 0 0;
+#X connect 10 0 0 0;
+#X connect 11 0 10 0;
+#X connect 12 0 10 1;
+#X connect 19 0 0 0;

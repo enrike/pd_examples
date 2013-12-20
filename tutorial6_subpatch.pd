@@ -1,0 +1,21 @@
+#N canvas 414 305 450 300 10;
+#N canvas 0 0 450 300 mysubpatch 0;
+#X obj 95 21 inlet;
+#X obj 107 205 outlet;
+#X obj 197 23 inlet;
+#X obj 117 149 * 10;
+#X obj 117 95 / 2;
+#X connect 0 0 4 0;
+#X connect 2 0 4 1;
+#X connect 3 0 1 0;
+#X connect 4 0 3 0;
+#X restore 149 80 pd mysubpatch;
+#X floatatom 157 130 5 0 0 0 - - -;
+#X floatatom 151 24 5 0 0 0 - - -;
+#X text 248 85 << click;
+#X floatatom 235 55 5 0 0 0 - - -;
+#X text 12 187 a subpatch it is just a subspace within the current
+patch. this is ONE single file with two patching spaces in it;
+#X connect 0 0 1 0;
+#X connect 2 0 0 0;
+#X connect 4 0 0 1;

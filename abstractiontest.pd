@@ -1,0 +1,41 @@
+#N canvas 232 358 805 344 10;
+#X obj 120 27 inlet;
+#X obj 120 187 outlet;
+#X obj 120 71 t f f;
+#X obj 120 129 + 1;
+#X obj 150 99 * 2;
+#X obj 27 198 outlet;
+#X obj 31 109 + \$1;
+#X obj 276 216 \$0;
+#X floatatom 274 236 5 0 0 0 - - -;
+#X obj 275 195 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X text 294 197 bang me;
+#X floatatom 274 314 5 0 0 0 - - -;
+#X obj 273 272 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X text 293 274 bang me;
+#X obj 274 293 \$1;
+#X text 338 300 this is the initalization number we passed to the abstraction
+;
+#X text 317 219 this is a unique number for each abstraction;
+#X text 273 24 this is an abstraction used on tutorial6_abstraction_test.pd
+check the example folder and you will find an abtraction.pd file abstractions
+are instances of the file. You can create as many abstractions as you
+need from the same file. They are all identical copies but its internal
+state is independent from the others. \$1 means the number we are passing
+to the instance when creating it and it can be different for each instance.
+\$0 is a number that it is differenct for each instance \, quite useful
+in some situations like doing an abstraction of a delay line \, try
+this in the diffrent instances of abstractions_test:;
+#X connect 0 0 2 0;
+#X connect 0 0 6 0;
+#X connect 2 0 3 0;
+#X connect 2 1 4 0;
+#X connect 3 0 1 0;
+#X connect 4 0 3 1;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
+#X connect 9 0 7 0;
+#X connect 12 0 14 0;
+#X connect 14 0 11 0;

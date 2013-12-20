@@ -1,0 +1,22 @@
+#N canvas 361 305 450 300 10;
+#X obj 32 19 inlet;
+#X obj 40 116 outlet;
+#X obj 297 149 print \$1-sample;
+#X obj 295 129 bng 15 250 50 0 empty empty empty 0 -6 0 8 -262144 -1
+-1;
+#X text 268 26 this is an abstraction;
+#X text 266 45 used by tutorial8 file;
+#X obj 162 19 inlet;
+#X obj 161 121 outlet;
+#X obj 92 20 inlet;
+#X obj 100 117 outlet;
+#X obj 174 75 \$0;
+#X obj 43 68 \$1;
+#X obj 104 69 \$2;
+#X connect 0 0 11 0;
+#X connect 3 0 2 0;
+#X connect 6 0 10 0;
+#X connect 8 0 12 0;
+#X connect 10 0 7 0;
+#X connect 11 0 1 0;
+#X connect 12 0 9 0;
