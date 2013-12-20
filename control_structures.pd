@@ -1,4 +1,4 @@
-#N canvas 284 126 725 312 10;
+#N canvas 218 112 758 478 10;
 #X obj 556 2 moses 10;
 #X floatatom 556 -16 4 0 0 0 - - -;
 #X floatatom 601 -17 4 0 0 0 - - -;
@@ -66,7 +66,7 @@
 1;
 #X floatatom 259 -25 5 0 0 0 - - -;
 #X obj 218 -5 metro 250;
-#X obj 669 240 route;
+#X obj 656 157 route;
 #X floatatom 601 44 4 0 0 0 - - -;
 #X floatatom 652 44 4 0 0 0 - - -;
 #X obj 601 23 moses 15;
@@ -76,17 +76,27 @@
 #X floatatom 49 159 5 0 0 0 - - -;
 #X symbolatom 92 159 10 0 0 0 - - -;
 #X msg 14 109 12 123 hola;
-#X floatatom 609 155 5 0 0 0 - - -;
-#X floatatom 610 84 5 0 0 0 - - -;
-#X obj 610 107 send loquesea;
-#X obj 609 133 receive loquesea;
+#X floatatom 324 388 5 0 0 0 - - -;
+#X floatatom 325 317 5 0 0 0 - - -;
+#X obj 325 340 send loquesea;
+#X obj 324 366 receive loquesea;
 #X obj 457 207 trigger b f b f;
 #X floatatom 457 187 5 0 0 0 - - -;
 #X obj 561 234 print first;
 #X obj 538 254 print second;
 #X obj 486 234 print third;
 #X obj 457 255 print fourth;
-#X obj 669 205 loadbang;
+#X obj 651 102 loadbang;
+#X floatatom 23 349 0 0 0 0 - - -;
+#X floatatom 140 348 0 0 0 0 - - -;
+#X obj 89 281 hsl 128 15 0 127 0 0 empty empty empty -2 -6 0 8 -262144
+-1 -1 0 1;
+#X obj 23 319 autoscale -0.1 0.1;
+#X obj 140 318 autoscale 1000 2361;
+#X obj 444 338 send~ sonidito;
+#X obj 446 364 receive~ sonidito;
+#X obj 444 311 osc~ 333;
+#X obj 446 395 dac~;
 #X connect 0 0 3 0;
 #X connect 0 1 58 0;
 #X connect 1 0 0 0;
@@ -143,3 +153,9 @@
 #X connect 69 2 72 0;
 #X connect 69 3 71 0;
 #X connect 70 0 69 0;
+#X connect 78 0 79 0;
+#X connect 78 0 80 0;
+#X connect 79 0 76 0;
+#X connect 80 0 77 0;
+#X connect 82 0 84 0;
+#X connect 83 0 81 0;
